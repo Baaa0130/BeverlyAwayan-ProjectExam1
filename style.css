@@ -1,0 +1,382 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+header .logo{
+  height: 50px;
+  line-height: 50px;
+  float:left;
+}
+
+header nav{
+  float: right;
+
+}
+header nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li{
+  list-style: none;
+}
+header nav ul li a{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+header nav ul li.active a, header nav ul li a:hover{
+  background: #2196f3;
+}
+.menu-toggle{
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 991px) {
+  header{
+    padding: 0 20px;
+  }
+  .menu-toggle{
+    display: block;
+  }
+  header nav{
+    height: 0;
+    position: absolute;
+    opacity: .3;
+    width: 100%;
+    background: #3a3a3a;
+    top: 50px;
+    left: 0;
+    transition: .25s;
+    overflow: hidden;
+  }
+  header nav.active{
+    height: calc(100vh - 50px);
+    opacity: 1;
+  }
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+  header nav ul li{
+    border-bottom: 1px solid #555;
+  }
+}
+
+.banner{
+  margin-top: 50px;
+  background-image: url('bg.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 50px);
+  background-size: cover;
+  color: #fff;
+}
+.banner .box{
+  max-width: 500px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255, .4);
+  padding: 70px 40px;
+  box-shadow: 0 5px 45px rgba(0,0,0, .1);
+  backdrop-filter: blur(5px);
+  background: rgba(255,255,255, .1);
+  border-radius: 5px;
+}
+.banner .title{
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.banner .desc{
+  font-size: 21px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  color: #ddd;
+}
+.banner a .fa-twitter{
+  color: #1da1f2;
+}
+.banner a .fa-youtube{
+  color: #f00;
+}
+.banner a .fa-instagram{
+  color: #f46b27;
+}
+
+.banner .time-until{
+  font-size: 14px;
+  color: #eee;
+  margin-top: 5px;
+}
+.banner .launch-name{
+  font-size: 28px;
+}
+.banner .timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+.banner .timer span{
+  display: inline-block;
+  background: #333;
+  border: 6px;
+  padding: 5px 8px;
+  font-size: 28px;
+  border-radius: 4px;
+}
+.banner .timer label{
+  display: block;
+  text-align: center;
+  font-size: 13px;
+}
+.banner .timer .days{
+  margin-right: 15px;
+}
+.banner .timer .mins{
+  margin: 0 7px;
+}
+
+.launches{
+  display: flex;
+  align-items: top;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 60px 0;
+}
+.launches .box{
+  width: 50%;
+  margin: 0 20px;
+}
+.upcoming-label{
+  font-size: 28px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom:3px solid #ccc;
+}
+
+.launches .loader{
+  color: #999;
+  font-size: 18px;
+  text-align: center;
+  display: none;
+}
+.launches .loading .loader{
+  display: block;
+}
+.launches .loader i{
+  margin-right: 5px;
+}
+.ups .up-box{
+  margin-bottom: 10px;
+}
+.ups .name{
+  font-size: 18px;
+  font-weight: 600;
+}
+.ups .desc{
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+  display: block;
+}
+.launches a{
+  color: #2196f3;
+  text-decoration: none;
+  margin-top: 40px;
+  line-height: 20px;
+  display: inline-block;
+}
+
+.launch-page{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.launch-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.launch-page .title{
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 40px;
+}
+.launch-page .box{
+  max-width: 460px;
+  width: 100%;
+  margin: 20px;
+}
+
+.launch-page .name{
+  color:#2196f3;
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 3px;
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.launch-page .desc{
+  color:#777;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.launchpad-page{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.launchpad-page .title{
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.launchpad-page table{
+  width: 100%
+}
+.launchpad-page table thead th{
+  background: #eaeaea;
+  padding: 10px;
+}
+
+.launchpad-page table .name{
+  width: 130px;
+  padding-left: 10px;
+}
+.launchpad-page table .locality{
+  width: 170px;
+}
+.launchpad-page table .region{
+  width: 100px;
+  text-align: center;
+}
+.launchpad-page table .details{
+  color: #777;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+.launchpad-page table tbody td{
+  padding: 10px 0;
+  vertical-align: top;
+}
+.launchpad-page table tbody tr:nth-child(even){
+  background: #f8f8f8;
+}
+
+.contact{
+  margin-top: 50px;
+  background-image: url('space.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 50px);
+  background-size: cover;
+  color: #fff;
+}
+.contact .box{
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  border: 1px solid rgba(255,255,255, .4);
+  padding: 40px;
+  box-shadow: 0 5px 45px rgba(0,0,0, .1);
+  backdrop-filter: blur(5px);
+  background: rgba(255,255,255, .1);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0, 1);
+}
+.contact .box p{
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.field{
+  width: 80%;
+  margin: 0 auto 15px;
+  text-align: left;
+}
+
+.field label{
+  display: block;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.field input{
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+}
+
+.field textarea{
+  width: 100%;
+  height: 60px;
+  max-height: 60px;
+  min-height: 60px;
+}
+
+button{
+  width: 200px;
+  padding: 10px;
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 3px rgba(0,0,0, .5);
+}
+.error{
+  color:#ff5d5d;
+  font-size: 14px;
+  margin-top: 3px;
+  font-style: italic;
+}
+
+footer {
+  background-color: #111;
+  padding: 20px 0;
+  color: #fff;
+} 
+
+.innerfooter{
+  padding: 10px 0;
+  font-family: 'Rubik', sans-serif;
+}

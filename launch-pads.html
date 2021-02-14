@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>SpaceX microsite</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" height="50" /></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="launches.html">Launches</a></li>
+        <li class="active"><a href="launch-pads.html">Launch Pads</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menuToggler">
+      <i class="fa fa-bars"></i>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="box">
+      <div class="title">SpaceX</div>
+      <div class="desc">designs, manufactures and launches the world’s most advanced rockets and spacecraft</div>
+      
+      <div class="loader">
+        <i class="fa fa-spinner fa-spin fa-fw"></i> Loading ...
+      </div>
+      <div class="timer-box">
+        <div class="launch-name"></div>
+        <div class="time-until">Time until next launch</div>
+        <div class="timer">
+          <div class="days">
+            <span id="days"></span>
+            <label>Days</label>
+          </div>
+          <div>
+            <span id="hours"></span>
+            <label>Hours</label>
+          </div>
+          <div class="mins">
+            <span id="mins"></span>
+            <label>Mins</label>
+          </div>
+          <div>
+            <span id="secs"></span>
+            <label>Secs</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="launchpad-page">
+    <div class="title">Launch Pads</div>
+    <table cellspacing="0">
+      <thead>
+        <th>Name</th>
+        <th>Locality</th>
+        <th>Region</th>
+        <th>Details</th>
+      </thead>
+      <tbody>
+        <tr class="one">
+          <td class="name"></td>
+          <td class="locality"></td>
+          <td class="region"></td>
+          <td class="details"></td>
+        </tr>
+        <tr class="two">
+          <td class="name"></td>
+          <td class="locality"></td>
+          <td class="region"></td>
+          <td class="details"></td>
+        </tr>
+        <tr class="three">
+          <td class="name"></td>
+          <td class="locality"></td>
+          <td class="region"></td>
+          <td class="details"></td>
+        </tr>
+        <tr class="four">
+          <td class="name"></td>
+          <td class="locality"></td>
+          <td class="region"></td>
+          <td class="details"></td>
+        </tr>
+        <tr class="five">
+          <td class="name"></td>
+          <td class="locality"></td>
+          <td class="region"></td>
+          <td class="details"></td>
+        </tr>
+        <tr class="six">
+          <td class="name"></td>
+          <td class="locality"></td>
+          <td class="region" ></td>
+          <td class="details"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="launch-pads.js"></script>
+
+  <footer class="innerfooter">
+    <p> 2020 Noroff Beverly Awayan Project Exam 1</p>
+  </footer>
+
+  
+</body>
+</html>

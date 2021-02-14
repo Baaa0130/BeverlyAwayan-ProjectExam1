@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>SpaceX microsite</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" height="50" /></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="launches.html">Launches</a></li>
+        <li><a href="launch-pads.html">Launch Pads</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menuToggler">
+      <i class="fa fa-bars"></i>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="box">
+      <div class="title">SpaceX</div>
+      <div class="desc">designs, manufactures and launches the world’s most advanced rockets and spacecraft</div>
+      
+      <div class="loader">
+        <i class="fa fa-spinner fa-spin fa-fw"></i> Loading ...
+      </div>
+      <div class="timer-box">
+        <div class="launch-name"></div>
+        <div class="time-until">Time until next launch</div>
+        <div class="timer">
+          <div class="days">
+            <span id="days"></span>
+            <label>Days</label>
+          </div>
+          <div>
+            <span id="hours"></span>
+            <label>Hours</label>
+          </div>
+          <div class="mins">
+            <span id="mins"></span>
+            <label>Mins</label>
+          </div>
+          <div>
+            <span id="secs"></span>
+            <label>Secs</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="launch-page">
+    <div class="title">Launch Schedule</div>
+    <div class="launch-flex">
+      <div class="box one">
+        <div class="name"></div>
+        <div class="videoWrapper">
+          <iframe frameborder="0" allowfullscreen src="" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="desc"></div>
+      </div>
+      <div class="box two">
+        <div class="name"></div>
+        <div class="videoWrapper">
+          <iframe frameborder="0" allowfullscreen src="" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="desc"></div>
+      </div>
+      <div class="box three">
+        <div class="name"></div>
+        <div class="videoWrapper">
+          <iframe frameborder="0" allowfullscreen src="" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="desc"></div>
+      </div>
+      <div class="box four">
+        <div class="name"></div>
+        <div class="videoWrapper">
+          <iframe frameborder="0" allowfullscreen src="" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="desc"></div>
+      </div>
+      <div class="box five">
+        <div class="name"></div>
+        <div class="videoWrapper">
+          <iframe frameborder="0" allowfullscreen src="" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="desc"></div>
+      </div>
+      <div class="box six">
+        <div class="name"></div>
+        <div class="videoWrapper">
+          <iframe frameborder="0" allowfullscreen src="" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="desc"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="launches.js"></script>
+</body>
+</html>
